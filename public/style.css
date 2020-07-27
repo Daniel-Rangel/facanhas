@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body{
+    background-color: rgba(37, 37, 37, 0.05);
+}
+
+.informacao{
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-areas:
+    'card_info content'
+    'card_info content'
+    'footer footer'
+    ;
+}
+
+.info{
+    grid-area: card_info;
+}
+
+.card_sobre{
+    width: 100%;
+    background-color:red;
+}
+
+.card_sobre div.img{
+    width: 60%;
+    margin: 0 auto;
+}
+.card_sobre img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.content{
+    grid-area: content;
+    background-color: brown;
+}
+
+footer{
+    grid-area: footer;
+    background-color: chartreuse;
+}
