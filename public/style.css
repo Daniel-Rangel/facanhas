@@ -47,10 +47,10 @@ nav ul li{
 
 .card_info{
     background-color: white;
-    width: 65%;
+    width: 55%;
     margin: 0 auto;
     position: absolute;
-    margin-top: 138px;
+    margin-top: 118px;
     display: grid;
     grid-template-columns: 45% 1fr;
     grid-template-rows: 1fr 15%;
@@ -67,7 +67,8 @@ h1{
 }
 
 .card_info_dados{
-    padding: 64px;
+    width: 100%;
+    padding: 60px;
 }
 
 .card_info_dados h1{
@@ -102,9 +103,10 @@ h1{
 
 .social{
     grid-area: c;
-    padding: 28px;
     font-size: 20px;
     background-color: rgb(15, 138, 6);
+    display: flex;
+    align-items: center; 
 }
 
 .social ul{
