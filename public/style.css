@@ -8,7 +8,7 @@
 }
 
 header{
-    padding: 20px 64px;
+    padding: 16px 40px;
     display: flex;
     justify-content: space-between;
 }
@@ -21,16 +21,16 @@ header h2 {
 
 nav ul li{
     display: inline-block;
-    padding: 10px 20px;
+    padding: 8px 20px;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
 }
 
 .sobre{
     background-image: url(apresentacao.jpg);
-    min-height: 350px;
-    height: 500px;
+    min-height: 250px;
+    height: 450px;
     position: relative;
 }
 
@@ -45,10 +45,10 @@ nav ul li{
 
 .card_info{
     background-color: white;
-    width: 50%;
+    width: 65%;
     margin: 0 auto;
     position: absolute;
-    margin-top: 8.4vw;
+    margin-top: 7.8vw;
     display: grid;
     grid-template-columns: 45% 1fr;
     grid-template-rows: 1fr 15%;
