@@ -1,50 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     border: none;
+    font-family: 'Roboto', sans-serif;
 }
 
-body{
-    background-color: rgba(37, 37, 37, 0.05);
+header{
+    padding: 20px 64px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.informacao{
-    max-width: 900px;
+header h2 {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sobre{
+    background-image: url(apresentacao.jpg);
+    min-height: 350px;
+    height: 500px;
+    position: relative;
+}
+
+.sobre .sobre_sombra{
+    background-color: rgba(51, 255, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_info{
+    background-color: white;
+    width: 50%;
     margin: 0 auto;
-    margin-top: 100px;
+    position: absolute;
+    margin-top: 8.4vw;
     display: grid;
-    grid-template-columns: 30% 1fr;
-    grid-template-areas:
-    'card_info content'
-    'card_info content'
-    'footer footer'
-    ;
+    grid-template-columns: 45% 1fr;
+    grid-template-rows: 1fr 15%;
+    grid-template-areas: 'a b' 'c c' ;
+
 }
 
-.info{
-    grid-area: card_info;
-}
-
-.card_sobre{
+.card_info .img{
     width: 100%;
-    background-color:red;
 }
 
-.card_sobre div.img{
-    width: 60%;
-    margin: 0 auto;
+.card_info_dados{
+    padding: 64px;
 }
-.card_sobre img{
+
+.card_info_dados h1{
+    font-weight: 500;
+}
+
+.card_info_dados > h3{
+    font-weight: 500;
+    padding-top: 4px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.card_info_dados .info{
+    padding-top: 16px;
+}
+
+.card_info_dados .info h3{
+    font-size: 16px;
+}
+
+.card_info_dados .info p{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+    padding-top: 8px;
+}
+
+.card_info_dados .info p:nth-child(3) {
+    padding-top: 4px;
+}
+
+.social{
+    grid-area: c;
+    padding: 28px;
+    font-size: 20px;
+    background-color: rgb(15, 138, 6);
+}
+
+.social ul{
     width: 100%;
-    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.content{
-    grid-area: content;
-    background-color: brown;
+.social li {
+    display: inline-block;
 }
 
-footer{
-    grid-area: footer;
-    background-color: chartreuse;
+.social li a {
+    color: white;
+    text-decoration: none;
 }
