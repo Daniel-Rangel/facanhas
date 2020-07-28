@@ -5,6 +5,7 @@
     padding: 0;
     border: none;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 header{
@@ -14,6 +15,7 @@ header{
 }
 
 header h2 {
+    font-size: 20px;
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -23,7 +25,7 @@ nav ul li{
     display: inline-block;
     padding: 8px 20px;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
 }
 
@@ -48,12 +50,16 @@ nav ul li{
     width: 65%;
     margin: 0 auto;
     position: absolute;
-    margin-top: 7.8vw;
+    margin-top: 138px;
     display: grid;
     grid-template-columns: 45% 1fr;
     grid-template-rows: 1fr 15%;
     grid-template-areas: 'a b' 'c c' ;
 
+}
+
+h1{
+    font-size: 24px;
 }
 
 .card_info .img{
@@ -69,6 +75,7 @@ nav ul li{
 }
 
 .card_info_dados > h3{
+    font-size: 14px;
     font-weight: 500;
     padding-top: 4px;
     color: rgba(0, 0, 0, 0.8);
@@ -79,11 +86,11 @@ nav ul li{
 }
 
 .card_info_dados .info h3{
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .card_info_dados .info p{
-    font-size: 16px;
+    font-size: 14px;
     color: rgba(0, 0, 0, 0.8);
     font-weight: 500;
     padding-top: 8px;
